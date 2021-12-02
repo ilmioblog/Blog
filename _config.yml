@@ -15,7 +15,7 @@ logo:
 description: "BlogBox is a bold theme for the Jekyll blogging platform. Available for purchase at ThemeForest.net."
 
 # Tagline below the site title
-tagline: "O beata solitudo, O sola beatitudo..."
+tagline: <i>"O beata solitudo, O sola beatitudo..."</i>
 
 # The subpath of your site, e.g. /blog, for generating urls
 baseurl:
