@@ -1,23 +1,20 @@
 ---
 layout: default
 ---
-<div class="container">
-	<div class="row">
-		<div class="col col-12">
-			<div class="page-image-box">
-				<div class="page-image" style="background-image: url({{"/img/" | prepend: site.baseurl | append : page.image}})"></div>
-			</div>
-		</div>
-		<article class="col col-12 col-t-10 push-t-1 page">
-			<div class="page-content">
-				<div class="page-head">
-					<h1 class="page-title">{{ page.title | escape }}</h1>
-				</div>
-
-				<div class="page-body">
-					{{ content }}
-				</div>
-			</div>
-		</article> <!-- /.page -->
-	</div>
-</div>
+<main class="content fade-in-down delay-0_75s">
+    <div class="inner">
+        <article class="post">
+            {% if page.featured_image %}
+            <div class="post-thumbnail"><img src="{{ "/images/" | append: page.featured_image | prepend: site.baseurl }}" alt="{% if page.featured_image_alt %}{{ page.featured_image_alt }}{% else %}{{ page.title }}{% endif %}" /></div>
+            {% endif %}
+            <div class="entry-box">
+                <header class="entry-header">
+                    <h1 class="entry-title">{{ page.title }}</h1>
+                </header><!-- .entry-header -->
+                <div class="entry-content">
+                    {{content}}
+                </div><!-- .entry-content -->
+            </div><!-- .entry-box -->
+        </article><!-- .post -->
+    </div><!-- .inner -->
+</main><!-- .content -->

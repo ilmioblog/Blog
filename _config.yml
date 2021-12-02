@@ -1,72 +1,77 @@
-#-------------------------------
-# General Site Settings
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-title: Galada Theme | Theme for Jekyll
-description: Galada is an easy and simple theme for Jekyll. Dark colors, give it a special exquisite look. A careful approach to design and features make it an ideal solution for a personal blog. # this means to ignore newlines until "baseurl:"
-baseurl: "/galada" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# Site title
+title: "BlogBox"
 
+# Site logo
+logo:
 
-#-------------------------------
-# About Section
-author-name:   Natali Anderson
-author-avatar: 09.jpg
+# A description of your site for social meta tag, search engines, and feed.xml
+description: "BlogBox is a bold theme for the Jekyll blogging platform. Available for purchase at ThemeForest.net."
 
+# Tagline below the site title
+tagline: "Tales of a digital nomad."
 
-#-------------------------------
-# Contact links
-facebook:  https://facebook.com/ # Add your Facebook handle
-twitter:   https://twitter.com/ # Add your Facebook handle
-instagram: https://www.instagram.com/ # Add your Facebook handle
-pinterest: https://www.pinterest.com/ # Add your Facebook handle
-
-
-#-------------------------------
-# Comment Section (Disqus)
-disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
-
-
-#-------------------------------
-# Instagram Feed
-instafeed: true # To enable the instafeed, use the value true. To turn off use the value false.
-
-
-#-------------------------------
-# Google Analytics
-google-analytics: # Add your identifier. For example UA-99631805-1.
-
-
-#-------------------------------
-# Newsletter
-mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
-
-
-#-------------------------------
-# Build settings
-markdown: kramdown
-permalink: ':title/'
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-
-paginate: 7
-paginate_path: "/page/:num"
-
-include:
-  - _pages
+# The subpath of your site, e.g. /blog, for generating urls
+baseurl:
 
 sass:
   sass_dir: _sass
-  style: compressed
 
+# The base hostname & protocol of your site for where absolute urls are needed
+url: "http://justgoodthemes.com"
 
-#-------------------------------
-# Exclude from processing.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Site navigation - each item must have a title and a url.
+navigation:
+- text: Home
+  url: /
+- text: About
+  url: /about/
+- text: Style Guide
+  url: /style-guide/
+- text: Archives
+  url: /tags/
+
+# The shortname for your Disqus site to enable comments.
+disqus: justgoodthemes
+
+# Author information - author info at the bottom of the post
+author_name: "John Doe"
+author_bio: "My name is John Doe. I’m a full-time adventure travel blogger and photographer who’s been exploring the world for over 6 years."
+author_url: "https://justgoodthemes.com"
+author_location: "Vilnius, Lithuania"
+author_image: authorimage.jpg
+
+# Footer ad banner
+banner_url: "https://justgoodthemes.com/"
+banner_image: banner.jpg
+
+# Footer newsletter widget - add your form action url for MailChimp signup form here
+mailchimp_url: "//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117"
+
+# Social links in the site footer
+twitter_username: "username"
+facebook_username: "username"
+googleplus_username: "+username"
+github_username: "username"
+codepen_username: "username"
+dribbble_username: "username"
+medium_username: "@username"
+instagram_username: "username"
+pinterest_username: "username"
+linkedin_username: "username"
+
+# http://jekyllrb.com/docs/pagination/
+paginate: 5
+paginate_path: '/blog/page:num/'
+plugins: [jekyll-paginate]
+
+permalink: pretty
+markdown: kramdown
+kramdown:
+    auto_ids: false
