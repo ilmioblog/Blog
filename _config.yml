@@ -13,7 +13,7 @@ author-name:   Natali Anderson
 author-avatar: 09.jpg
 
 jekyll-archives:
-  enabled: []
+  enabled: true
   layout: archive
   permalinks:
     year: '/:year/'
