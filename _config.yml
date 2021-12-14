@@ -12,7 +12,16 @@ url: "https://ilmioblog.github.io/Blog/" # the base hostname & protocol for your
 author-name:   Natali Anderson
 author-avatar: 09.jpg
 
-plugins: jekyll-archives
+jekyll-archives:
+  enabled: []
+  layout: archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
+
 
 #-------------------------------
 # Contact links
